@@ -19,12 +19,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'kg=1b$pu31+8it$@=shj@oa06^z4)$+yhuywrpf42wl-!c+)=_'
+with open(os.path.join(BASE_DIR, "ERC/etc/key.txt")) as key:
+    SECRET_KEY = key.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['erc18.ru', 'leoshvy4.beget.tech']
 
 # Application definition
 
@@ -115,5 +116,5 @@ USE_TZ = True
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
-
+STATIC_ROOT = os.path.join(BASE_DIR, "prod_static")
 STATIC_URL = '/static/'
