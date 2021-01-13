@@ -1,0 +1,27 @@
+{% load static %}
+<div class="nav flex-column sidenav">
+    <div class="nav-item">
+        <a class="link {% if request.resolver_match.url_name == "places" %}active{% endif %}" href="{% url 'places' %}" style="background-image: url({% static 'img/2.png' %});">Пункты консультации населения</a>
+    </div>
+    <div class="nav-item">
+        <a class="link {% if request.resolver_match.url_name == "clients" %}active{% endif %}" href="{% url 'clients' %}" style="background-image: url({% static 'img/3.png' %});">Наши клиенты</a>
+    </div>
+    <div class="nav-item">
+        <a class="link {% if request.resolver_match.url_name == "mobile" %}active{% endif %}" href="{% url 'mobile' %}" style="background-image: url({% static 'img/8.png' %});">Мобильное приложение для оплаты услуг</a>
+    </div>
+    <div class="nav-item">
+        <a class="link" href="#" style="background-image: url({% static 'img/5.png' %});">Показания приборов учёта</a>
+    </div>
+    <div class="nav-item">
+        <a class="link" href="#" style="background-image: url({% static 'img/6.png' %});">Вопрос-ответ</a>
+    </div>
+    <div class="nav-item">
+        <a class="link {% if request.resolver_match.url_name == "services" %}active{% endif %}" href="{% url 'services' %}" style="background-image: url({% static 'img/9.png' %});">Дополнительные услуги</a>
+    </div>
+    <div class="nav-item">
+        <a class="link" href="#" style="background-image: url({% static 'img/7.png' %});">Оплата услуг</a>
+    </div>
+    <div class="nav-item">
+        <a class="link {% if request.resolver_match.url_name == "integration" %}active{% endif %}" href="{% url 'integration' %}" style="background-image: url({% static 'img/1.png' %});">Интеграция с ГИС ЖКХ</a>
+    </div>
+</div>

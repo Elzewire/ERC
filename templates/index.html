@@ -1,0 +1,144 @@
+{% extends 'base-index.html' %}
+{% load static %}
+{% block title %}Главная{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <div class="panel-big">
+                        <div class="panel-wrapper" style="background-image: url({% static 'img/schetchiki.jpg' %});">
+                            <div class="image">
+                                <div class="text">
+                                    <h2>Показатели приборов учёта</h2>
+                                    <p>Вы можете отправить показания своих счётчиков</p>
+                                    <a class="btn btn-light text-dark" href="metrics.html">Отправить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="panel">
+                        <img src={% static 'img/services.jpg' %}>
+                        <div class="text">
+                            <h5>Дополнительные услуги</h5>
+                            <p>Размещение ваших объявлений, реклама и не только...</p>
+                            <a class="link-text" href={% url 'services' %}>Узнать больше ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="panel">
+                        <img src={% static 'img/faq.jpg' %}>
+                        <div class="text">
+                            <h5>FAQ</h5>
+                            <p>Ваши часто задаваемые вопросы и ответы</p>
+                            <a class="link-text" href="#">Узнать больше ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="panel">
+                        <img src={% static 'img/consult.jpg' %}>
+                        <div class="text">
+                            <h5>Пункты консультаций</h5>
+                            <p>Адреса всех пунктов консультаций</p>
+                            <a class="link-text" href={% url 'places' %}>Узнать больше ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="panel-big">
+                        <div class="panel-wrapper" style="background-image: url({% static 'img/online-cards.jpg' %});">
+                            <div class="image">
+                                <div class="text">
+                                    <h2>Оплата услуг онлайн</h2>
+                                    <p>Вы можете оплатить услуги не выходя из дома</p>
+                                    <a class="btn btn-light text-dark" href="#">Оплатить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="panel">
+                        <img src={% static 'img/customers.jpg' %}>
+                        <div class="text">
+                            <h5>Наши клиенты</h5>
+                            <p>Счастливые люди - счастливы во всём!</p>
+                            <a class="link-text" href={% url 'clients' %}>Узнать больше ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="panel">
+                        <img src={% static 'img/mob.jpg' %}>
+                        <div class="text">
+                            <h5>Мобильное приложение</h5>
+                            <p>Коммуналку - через телефон! Поговори и заплати!</p>
+                            <a class="link-text" href={% url 'mobile' %}>Узнать больше ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="panel">
+                        <img src={% static 'img/integration.jpg' %}>
+                        <div class="text">
+                            <h5>Интеграция с ГИС ЖКХ</h5>
+                            <p>Какие преимущества интеграции?</p>
+                            <a class="link-text" href={% url 'integration' %}>Узнать больше ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="news-del">
+                        <span class="news-cap">Новости</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="news-container">
+                        <div class="news news--translate">
+                            <input class="news__activator" type="radio" name="news" id="1" checked="checked"/>
+                            <input class="news__activator" type="radio" name="news" id="2"/>
+                            <input class="news__activator" type="radio" name="news" id="3"/>
+                            <div class="news__controls">
+                                <label class="news__control news__control--backward" for="3"></label>
+                                <label class="news__control news__control--forward" for="2"></label>
+                            </div>
+                            <div class="news__controls">
+                                <label class="news__control news__control--backward" for="1"></label>
+                                <label class="news__control news__control--forward" for="3"></label>
+                            </div>
+                            <div class="news__controls">
+                                <label class="news__control news__control--backward" for="2"></label>
+                                <label class="news__control news__control--forward" for="1"></label>
+                            </div>
+                            <div class="news__track">
+                                <li class="news__slide" style="background-image: url({% static 'img/faq.png' %});">
+                                    <h2>В Перми управляющую компанию оштрафовали за граффити на фасаде дома</h2>
+                                </li>
+                                <li class="news__slide" style="background-image: url({% static 'img/faq.png' %});">
+                                    <h2>В Перми управляющую компанию оштрафовали за граффити на фасаде дома</h2>
+                                </li>
+                                <li class="news__slide" style="background-image: url({% static 'img/faq.png' %});">
+                                    <h2>В Перми управляющую компанию оштрафовали за граффити на фасаде дома</h2>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
