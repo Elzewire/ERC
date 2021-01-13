@@ -23,7 +23,7 @@ with open(os.path.join(BASE_DIR, "ERC/etc/key.txt")) as key:
     SECRET_KEY = key.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['erc18.ru', 'leoshvy4.beget.tech']
 
