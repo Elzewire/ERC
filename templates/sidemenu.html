@@ -13,10 +13,7 @@
         <a class="link" href="#" style="background-image: url({% static 'img/5.png' %});">Показания приборов учёта</a>
     </div>
     <div class="nav-item">
-        <a class="link" href="#" style="background-image: url({% static 'img/6.png' %});">Вопрос-ответ</a>
-    </div>
-    <div class="nav-item">
-        <a class="link {% if request.resolver_match.url_name == "services" %}active{% endif %}" href="{% url 'services' %}" style="background-image: url({% static 'img/9.png' %});">Дополнительные услуги</a>
+        <a class="link {% if request.resolver_match.url_name == "faq" %}active{% endif %}" href="{% url 'faq' %}" style="background-image: url({% static 'img/6.png' %});">FAQ</a>
     </div>
     <div class="nav-item">
         <a class="link" href="#" style="background-image: url({% static 'img/7.png' %});">Оплата услуг</a>

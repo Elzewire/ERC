@@ -12,7 +12,7 @@
                                 <div class="text">
                                     <h2>Показатели приборов учёта</h2>
                                     <p>Вы можете отправить показания своих счётчиков</p>
-                                    <a class="btn btn-light text-dark" href="metrics.html">Отправить</a>
+                                    <a class="btn btn-light text-dark" href="#">Отправить</a>
                                 </div>
                             </div>
                         </div>
@@ -24,9 +24,9 @@
                     <div class="panel">
                         <img src={% static 'img/services.jpg' %}>
                         <div class="text">
-                            <h5>Дополнительные услуги</h5>
-                            <p>Размещение ваших объявлений, реклама и не только...</p>
-                            <a class="link-text" href={% url 'services' %}>Узнать больше ></a>
+                            <h5>Информационный центр</h5>
+                            <p>Получение консультации, полезная информация и не только...</p>
+                            <a class="link-text" href={% url 'info' %}>Узнать больше ></a>
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                         <div class="text">
                             <h5>FAQ</h5>
                             <p>Ваши часто задаваемые вопросы и ответы</p>
-                            <a class="link-text" href="#">Узнать больше ></a>
+                            <a class="link-text" href="{% url 'faq' %}">Узнать больше ></a>
                         </div>
                     </div>
                 </div>

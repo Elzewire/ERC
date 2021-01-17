@@ -22,5 +22,21 @@ class PlacesView(TemplateView):
     template_name = 'places.html'
 
 
-class ServicesView(TemplateView):
-    template_name = 'services.html'
+class InfoView(TemplateView):
+    template_name = 'info.html'
+
+
+class CertificateView(TemplateView):
+    template_name = 'certificate.html'
+
+
+class FaqView(TemplateView):
+    template_name = 'faq.html'
+
+
+class IpuView(TemplateView):
+    template_name = 'ipu.html'
+
+
+class AboutView(TemplateView):
+    template_name = 'about.html'
